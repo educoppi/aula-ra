@@ -141,33 +141,7 @@ Os testes mostram que o desempenho de uma aplicação de RA baseada em imagem de
 
 ---
 
-## 7. Reflexões
-
-**O que torna uma imagem um bom ou um mau target?**
-Um bom target tem alto contraste, muitos cantos e detalhes, e regiões diferentes entre si. Um mau target tem fundo uniforme, pouco texto, padrões repetidos ou baixo contraste.
-
-**Qual a diferença entre detectar o cartão e continuar rastreando sua posição?**
-A **detecção** encontra o cartão do zero na imagem, comparando-o com o target. O **tracking** acompanha o cartão quadro a quadro a partir da pose anterior, que já é conhecida. Por isso costuma ser mais fácil *manter* o rastreamento que *começar* em condições difíceis.
-
-**O que acontece com os objetos virtuais quando a câmera muda de posição?**
-Eles continuam presos ao cartão. O MindAR recalcula a pose a cada quadro, e a cena é desenhada de acordo, então os objetos mudam de perspectiva como se fossem físicos.
-
-**Como Position, Rotation e Scale influenciam a experiência?**
-- **Position** organiza o conteúdo ao redor do cartão sem cobrir as partes importantes e dá profundidade (skills "saltando").
-- **Rotation** inclina o painel para facilitar a leitura e dá movimento ao logo.
-- **Scale** cria animações de entrada e de resposta ao toque, que mostram ao usuário que algo aconteceu.
-
-**Qual é a função do GitHub Pages e qual é a função do MindAR?**
-O **GitHub Pages** hospeda a aplicação e a entrega via **HTTPS**, que é obrigatório para o navegador liberar a câmera. O **MindAR** faz a parte de Realidade Aumentada: reconhece o cartão e calcula sua pose para posicionar a cena do A-Frame.
-
-**Como eu melhoraria o cartão depois dos testes?**
-- Imprimir o cartão maior ou em papel fosco, para aumentar a distância útil e evitar reflexos.
-- Espalhar ainda mais os detalhes por todo o cartão, para que, mesmo coberto em parte, sobrem pontos suficientes em outras regiões.
-- Testar em um celular com câmera melhor, para separar o que é limitação do aparelho do que é limitação do target.
-
----
-
-## 8. Referências
+## 7. Referências
 
 - MindAR — documentação: https://hiukim.github.io/mind-ar-js-doc/
 - MindAR — exemplos: https://hiukim.github.io/mind-ar-js-doc/examples/basic/
