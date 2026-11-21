@@ -1,9 +1,5 @@
 # Meu Cartão Profissional em Realidade Aumentada
 
-**Aluno:** Eduardo Bruno Coppi
-**Disciplina:** Realidade Aumentada — Aula 02 (Atividade prática)
-**Tecnologias:** MindAR (image tracking) · A-Frame · GitHub Pages
-
 ![Cartão profissional usado como target](assets/images/cartao.png)
 
 ---
